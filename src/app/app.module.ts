@@ -8,19 +8,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { UserComponent } from './components/user/user.component';
 import { WrapperComponent } from './components/wrapper/wrapper.component';
+import { ChartComponent } from './components/chart/chart.component';
+import { NgChartsModule } from 'ng2-charts';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
+import { TypePieChartComponent } from './components/type-pie-chart/type-pie-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UploadComponent,
     UserComponent,
-    WrapperComponent
+    WrapperComponent,
+    ChartComponent,
+    BarChartComponent,
+    TypePieChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
