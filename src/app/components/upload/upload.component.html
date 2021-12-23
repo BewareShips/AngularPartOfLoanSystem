@@ -10,16 +10,23 @@
   </div>
 </div>
 
-<label class="btn btn-default btn-upload">
-  <label for="files" class="btn">Select file</label>
-  <input id="files"style="display:none" type="file" (change)="chooseFile($event)" />
-</label>
+<div container-btns>
+  <label class="btn btn-default btn-upload">
+    <mat-icon>picture_as_pdf</mat-icon>
+    <label for="files" class="btn">
+      
+      Select file</label>
+    <input id="files"style="display:none" type="file" (change)="chooseFile($event)" />
+  </label>
+  
+  <button class="btn btn-primary btn-upload-submit" [disabled]="!chosenFiles" (click)="upload()" >
+    <mat-icon>cloud_upload</mat-icon>   <span>Upload</span>
+  </button>
+</div>
 
-<button class="btn btn-primary btn-upload-submit" [disabled]="!chosenFiles" (click)="upload()" >
-  Upload
-</button>
 
-<div class="alert alert-light">{{ msg }}</div>
+
+<div *ngIf="msg" class="alert alert-light">{{ msg }}</div>
 
 <div class="card">
   <div class="card-header">Files Info</div>
@@ -33,4 +40,5 @@
   </ul>
 </div>
 
-<!-- <router-outlet></router-outlet> -->
+
+<router-outlet></router-outlet>

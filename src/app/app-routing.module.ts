@@ -6,26 +6,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { UploadComponent } from './components/upload/upload.component';
 
 const routes: Routes = [
-  // {
-  //   path:'',
-  //   component:WrapperComponent,
-  //   children:[
-  //     {path:'',redirectTo:'/upload',pathMatch:'full'},
-  //     {
-  //       path:'upload',
-  //       component:UploadComponent
-  //     },
-  //     {
-  //       path:'user',
-  //       component:UserComponent
-  //     }
-  //   ]
-  // },
-  // {
-  //   path:'**',
-  //   redirectTo:'/upload',
-  //   pathMatch:'full'
-  // }
+  {
+    path:'',
+    component:WrapperComponent,
+    children:[
+      {path:'',redirectTo:'/upload',pathMatch:'full'},
+      {
+        path:'upload',
+        component:UploadComponent
+      },
+      {
+        path:'user',
+        component:UserComponent
+      }
+    ]
+  }
 ];
 
 @NgModule({

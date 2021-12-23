@@ -12,6 +12,10 @@ import { ChartComponent } from './components/chart/chart.component';
 import { NgChartsModule } from 'ng2-charts';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { TypePieChartComponent } from './components/type-pie-chart/type-pie-chart.component';
+import { TypeLineChartComponent } from './components/type-line-chart/type-line-chart.component';
+import {MatIconModule} from '@angular/material/icon';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+
 
 @NgModule({
   declarations: [
@@ -21,14 +25,18 @@ import { TypePieChartComponent } from './components/type-pie-chart/type-pie-char
     WrapperComponent,
     ChartComponent,
     BarChartComponent,
-    TypePieChartComponent
+    TypePieChartComponent,
+    TypeLineChartComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NoopAnimationsModule,
-    NgChartsModule
+    NgChartsModule,
+    MatIconModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
