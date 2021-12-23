@@ -15,6 +15,7 @@ import { TypePieChartComponent } from './components/type-pie-chart/type-pie-char
 import { TypeLineChartComponent } from './components/type-line-chart/type-line-chart.component';
 import {MatIconModule} from '@angular/material/icon';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { ForecastComponent } from './components/forecast/forecast.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
     BarChartComponent,
     TypePieChartComponent,
     TypeLineChartComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    ForecastComponent
   ],
   imports: [
     BrowserModule,

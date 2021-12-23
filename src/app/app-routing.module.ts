@@ -1,3 +1,4 @@
+import { ForecastComponent } from './components/forecast/forecast.component';
 import { UserComponent } from './components/user/user.component';
 import { WrapperComponent } from './components/wrapper/wrapper.component';
 
@@ -18,6 +19,10 @@ const routes: Routes = [
       {
         path:'user',
         component:UserComponent
+      },
+      {
+        path:'forecast',
+        component:ForecastComponent
       }
     ]
   }
